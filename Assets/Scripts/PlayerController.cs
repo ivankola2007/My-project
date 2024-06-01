@@ -193,9 +193,14 @@ public class PlayerController : MonoBehaviour
         inventoryManager.inventorySlots.Clear();
         inventoryManager.GetChestPanel().SetActive(false);
         inventoryManager.GetInventoryPanel().SetActive(false);
-    }
+    
+        currentBlock.transform.position = newBlockPos;
+        ModifyItemCount("Ground");
+        private void  ModifyItemCount(string itemNmae);
+        foreach (itemData item in inventoryItems );
 
-    private void OnTriggerEnter(Collider col)
+     
+    private void OnTriggerEnter(Collider col);
     {
         if (col.gameObject.name.StartsWith("mini"))
         {
@@ -203,4 +208,4 @@ public class PlayerController : MonoBehaviour
             Destroy(col.gameObject);
         }
     }
-}
+
