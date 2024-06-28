@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
+{  
     public const string EQUIPE_NOT_SELECTED_TEXT = "EquipeNotSelected";
     private const float gravityScale = 9.8f, speedScale = 5f, jumpForce = 5f, turnSpeed = 90f;
     private const float hitScaleSpeed = 15f;
